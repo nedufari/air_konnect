@@ -1,7 +1,6 @@
 from logging import raiseExceptions
 from multiprocessing import synchronize
 from operator import contains
-from unittest import result
 from fastapi import APIRouter,Response,status,Depends,HTTPException
 from sqlalchemy import true, func
 from ..database import get_db

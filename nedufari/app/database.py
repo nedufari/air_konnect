@@ -28,16 +28,3 @@ def get_db():
 #an environment variable is a variable configured on your local machine 
 
 
-""""
-while True:
-    try:
-        conn= psycopg2.connect(host="localhost",database="postgres",user="postgres",password="74150846",cursor_factory=RealDictCursor)
-        cursor=conn.cursor()
-        print("database connection is successful")
-        break
-    except Exception as error:
-        print("connection to databse failed")
-        print(error)
-        time.sleep(10)
-
-        """

@@ -9,19 +9,14 @@ models.Base.metadata.create_all(bind=engine)
 
 app=FastAPI()
 
-origins=["*"]#list of domains that can talk to our api
+origins=["*"]#as of now
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=origins, #you can specify the specifc domains you wish to talk to your api
+    allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],#you can also specify the kind of methods you want them to do with the api, you may decide to either allow them do a get request, a put request, a delete request. you simply can tell them what you can only give them access to
+    allow_methods=["*"], 
     allow_headers=["*"]
 )
-
-
-
-
-
 
 
 app.include_router(products.router)
