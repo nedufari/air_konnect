@@ -1,2 +1,2 @@
 # air_konnect
-a digital advert media , designed by abubakar emmanuella faridat and developed by anolue francis chinedu 
+a digital advert media , designed by Abubakar Emmanuella Faridat and developed by Anolue Francis Chinedu 
