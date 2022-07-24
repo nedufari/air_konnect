@@ -35,7 +35,7 @@ def update_user(id:int, instance:schemas.SellerUser, db:Session=Depends(database
     index=data.first()
 
     if index ==None:
-        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"the data with the id is not found ")
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f"the data with the id {id} is not found ")
     db.update(instance.dict(),synchronize_session=False)
     db.commit()
     return index
